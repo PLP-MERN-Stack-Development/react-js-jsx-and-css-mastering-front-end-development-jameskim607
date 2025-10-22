@@ -1,5 +1,7 @@
 # PLP Task Manager — React + Tailwind + Vite
 
+Live demo: https://react-js-jsx-and-css-mastering-fron-pi.vercel.app/
+
 This repository is a front-end demonstration project that teaches React fundamentals (components, hooks, routing) and Tailwind CSS styling using Vite as the build tool.
 
 Primary purpose
