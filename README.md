@@ -1,70 +1,64 @@
-# React.js and Tailwind CSS Assignment
+# PLP Task Manager — React + Tailwind + Vite
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+This repository is a front-end demonstration project that teaches React fundamentals (components, hooks, routing) and Tailwind CSS styling using Vite as the build tool.
 
-## Assignment Overview
+Primary purpose
+- A small task manager UI that demonstrates:
+	- Client-side routing with react-router
+	- Theming (light/dark) via a context provider
+	- Reusable, accessible components (Button, Card, Navbar, Footer)
+	- Fetching and displaying API data (example page: API Data Explorer)
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+What the code contains
+- `src/` — React source code, components, pages, and context.
+- `src/index.css` — Tailwind entry (with a small component layer to ensure readable buttons across themes).
+- `tailwind.config.js` & `postcss.config.js` — Tailwind + PostCSS setup.
+- `package.json` — Scripts:
+	- `npm run dev` — start Vite dev server with HMR
+	- `npm run build` — build a production bundle into `dist/`
+	- `npm run preview` — locally preview a production build
 
-## Getting Started
+How to run locally
+1. Clone the repository and change into the folder:
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-
-## Files Included
-
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
-
-## Requirements
-
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
-
-## Project Structure
-
-```
-src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
+```powershell
+git clone https://github.com/PLP-MERN-Stack-Development/react-js-jsx-and-css-mastering-front-end-development-jameskim607.git
+cd react-js-jsx-and-css-mastering-front-end-development-jameskim607
 ```
 
-## Submission
+2. Install dependencies and start the dev server:
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+```powershell
+npm install
+npm run dev
+```
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+3. Open the app in your browser at the printed local URL (e.g. http://localhost:5175/).
 
-## Resources
+Production build
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+```powershell
+npm run build
+npm run preview
+```
+
+Notes and development tips
+- The project uses Tailwind CSS and the PostCSS bridge; if you change Tailwind configuration, re-run the build/dev server to pick up changes.
+- There is a small `Button` component and a `.btn` component-layer in `src/index.css` to support consistent contrast behavior across light/dark mode.
+
+Contributing
+- Feel free to open issues or PRs. If you plan to add features, keep UI components reusable and add documentation comments to new components.
+
+License: MIT (same as starter templates)
+
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
